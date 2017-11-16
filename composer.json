@@ -1,0 +1,68 @@
+{
+  "name": "roots/sage",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "The best WordPress starter theme with a modern front-end development workflow. Based on HTML5 Boilerplate, gulp, Bower, and Bootstrap.",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    },
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    }
+  ],
+  "repositories":[
+    {
+      "type":"composer",
+      "url":"https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.6.3",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+        },
+        "require": {
+          "philippbaschke/acf-pro-installer": "^1.0",
+          "composer/installers": "^1.0"
+        }
+      }
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/sage/issues",
+    "forum": "https://discourse.roots.io/"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "wpackagist-plugin/wp-smushit":"*",
+    "wpackagist-plugin/wordpress-seo":"*",
+    "wpackagist-plugin/svg-support":"*",
+    "wpackagist-plugin/cyr3lat":"*",
+    "wpackagist-plugin/cloudflare":"*",
+    "wpackagist-plugin/wp-super-cache":"*",
+    "wpackagist-plugin/env-bar":"*",
+    "wpackagist-plugin/admin-menu-editor":"*",
+    "advanced-custom-fields/advanced-custom-fields-pro":"*",
+    "composer/installers": "~1.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "../../plugins/{$name}/": ["type:wordpress-plugin"],
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  }
+}

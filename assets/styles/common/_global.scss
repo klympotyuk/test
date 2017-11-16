@@ -1,0 +1,52 @@
+// WordPress admin panel
+#wpadminbar{
+    // overflow: hidden;
+    width: 35px;
+    min-width: 30px;
+    transition: 1s;
+    &.overflow{
+        overflow: hidden;
+    }
+    &.open{
+        width: 100%;
+    }
+}
+
+html{
+    margin-top: 0!important;
+}
+// basic
+body{
+	font-size: 62.5%;
+}
+
+.button, button, a{
+    outline: 0;
+}
+button:focus, a:focus{
+    color: inherit;
+}
+
+html, body{
+    -webkit-font-smoothing: antialiased;
+}
+ul{
+	font-size: 1em;
+}
+// p{
+// 	line-height: normal;
+// 	font-size: 1.8em;
+//     // line-height: 1;
+//     color: $black70;
+// 	// font-family: $futuralight; 
+// }
+// a{
+//     color:$blue80;
+// }
+// .row{
+// 	max-width: 1236px;
+// }
+// .slick-slide{
+// 	outline: none;
+// }
+ 

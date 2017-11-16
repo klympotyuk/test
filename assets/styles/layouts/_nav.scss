@@ -1,0 +1,87 @@
+nav{
+    background-color: #2b2b2b;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    bottom: 0px;
+    display: flex;
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 20%;
+        text-decoration: none;
+        font-family: 'ProximaNova-Light';
+        color: #727272;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 6px;
+        &__img{
+            width: 50px;
+            height: 50px;
+        }
+        &__title{
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+            &-name{
+                font-size: 18px;
+                margin-bottom: 0px;
+                font-family: 'ProximaNova-Bold';
+                color: #ffffff
+            }
+        }
+    }
+    .main-menu{
+        list-style-type: none;
+        display: flex;
+        height: 90px;
+        width: 80%;
+        justify-content: space-around;
+        &__item{
+            display: flex;            
+            a{
+                box-sizing: border-box;
+                border-left: 1px solid black;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'ProximaNova-Light';
+                color: #727272;
+                text-transform: uppercase;
+                padding-bottom: 23px;
+                width: 150px;
+                height: 90px;
+                display: flex;
+                justify-content:center;
+                align-items: flex-end;
+                &:hover{
+                    height: 93px;
+                    font-family: 'ProximaNova-Bold';
+                    background-color: #212121;
+                    align-items: flex-start;
+                    position: relative;
+                    top:-3px;
+                    padding-top: 23px;
+                }
+            }
+            &-links{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 38px;
+                color: #727272;
+                box-sizing: border-box;
+                border-left: 1px solid black;
+                a{
+                    .fa{
+                        color: #727272;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

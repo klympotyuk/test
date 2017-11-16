@@ -1,0 +1,44 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "http://example.dev",
+    "deploy": {
+      "ftphost"  : "webdrug1.ftp.tools",
+      "user"     : "webdrug1_gulpdeploy",
+      "password" : "v1h4j6x4",
+      "parallel" : "10",
+      "globs"    : [
+        "dist/**",
+        ".env",
+        "composer.json",        
+        "*.html",
+        "{lib,templates}/**/*.php",
+        "*.php",
+        "style.css",
+        "screenshot.png"
+        ],
+      "dest"     : "/www/wp-content/themes/lionline/"
+    }
+  }
+}
