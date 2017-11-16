@@ -60,6 +60,7 @@ nav{
                     height: 93px;
                     font-family: 'ProximaNova-Bold';
                     background-color: #212121;
+                    color: #ffffff;
                     align-items: flex-start;
                     position: relative;
                     top:-3px;
@@ -79,6 +80,9 @@ nav{
                     .fa{
                         color: #727272;
                         font-size: 15px;
+                        &:hover{
+                            color: #ffffff;
+                        }
                     }
                 }
             }
